@@ -93,7 +93,7 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 6px;
-    background-postion:cover;
+    background-size:cover;
 }
 
 .leader-card h3 {
@@ -122,3 +122,4 @@ body {
     background-color: #163a7a;
 
 }
+
