@@ -1,0 +1,86 @@
+/* Index Page CSS */
+
+/* Logo styling */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1000; /* Ensure logo stays on top */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fallback solid color */
+    background-color: #ffffff;
+    /* Older WebKit (Safari 5.1–6) */
+    background-image: -webkit-linear-gradient(to bottom right, #ffffff 0%, #cfe8ff 50%, #1e4da1 100%);
+    /* Standard syntax: white -> light blue -> deep blue */
+    background-image: linear-gradient(to bottom right, #ffffff 0%, #cfe8ff 50%, #1e4da1 100%);
+    /* Ensure background covers full viewport height */
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #1e4da1; /* blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #e3ecfa;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #1e4da1;
+    font-weight: bold;
+}
+
+/* Interactive states for navigation links */
+.navigation a {
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
+}
+
+.navigation a:hover {
+    background-color: rgba(30,77,161,0.12);
+    color: #0f2d66;
+    transform: translateY(-2px);
+}
+
+.navigation a:focus {
+    outline: 3px solid rgba(30,77,161,0.2);
+    outline-offset: 2px;
+    background-color: rgba(30,77,161,0.08);
+}
+
+.navigation a:active {
+    background-color: rgba(30,77,161,0.18);
+    transform: translateY(0);
+}
+
+/* Optional: mark current page link if author adds class="active" */
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    background-color: rgba(30,77,161,0.18);
+    color: #07224a;
+}
+
+.section {
+    padding: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #333;
+}
